@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online BookStore - Main</title>
+  <meta name="description" content="this is the best website that willhelp you exploring onlinie books at low cost ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    .mobile-warning {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      background: #e8491d;
+    }
+    @media (max-width: 700px) {
+      frameset { display: none; }
+      .mobile-warning { display: block; }
+    }
+  </style>
+</head>
+<frameset rows="10%,80%,10%">
+  <frame src="header.html" name="header" noresize scrolling="no">
+  <frameset cols="25%,75%">
+    <frame src="menu.html" name="menu" noresize scrolling="auto">
+    <frame src="main.html" name="main" noresize scrolling="auto">
+  </frameset>
+  <frame src="footer.html" name="footer" noresize scrolling="no">
+</frameset>
+</html>
